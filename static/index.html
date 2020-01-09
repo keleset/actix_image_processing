@@ -1,0 +1,46 @@
+<!doctype htmtl>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>Form</title>
+        <script type="text/javascript" src="form.js"></script>
+    </head>
+    <body>
+        <h3>Download from URL</h3>
+        <form name="dlform">
+            <label>
+                Url:
+                <input name="urls">
+            </label>
+            <label>
+                Url:
+                <input name="urls">
+            </label>
+            <label>
+                Url:
+                <input name="urls">
+            </label>
+            <label>
+                Url:
+                <input name="urls">
+            </label>
+            <button type="button" onclick="sendForm()">Submit</button>
+        </form>
+        <h3>Upload local files</h3>
+        <form action=/upload/local method=POST enctype="multipart/form-data">
+            <label>
+                Url 0:
+                <input name="file0" type="file">
+            </label>
+            <label>
+                Url 1:
+                <input name="file1" type="file">
+            </label>
+            <label>
+                Url 2:
+                <input name="file2" type="file">
+            </label>
+            <button type=submit>Submit</button>
+        </form>
+    </body>
+</html>
